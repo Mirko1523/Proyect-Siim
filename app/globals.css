@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #0e3b5d;
+  --secondary: #e9a826;
+  --background: #ffffff;
+  --foreground: #333333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-8 text-primary;
+  }
+
+  .section-description {
+    @apply text-lg text-center max-w-3xl mx-auto mb-12 text-gray-700;
+  }
+
+  .btn-primary {
+    @apply bg-secondary hover:bg-opacity-90 text-white font-bold py-3 px-6 rounded-md transition duration-300;
+  }
+}
+
+/* Add will-change hints for better performance with animations */
+.will-change-opacity {
+  will-change: opacity;
+}
+
+.will-change-transform {
+  will-change: transform;
+}
