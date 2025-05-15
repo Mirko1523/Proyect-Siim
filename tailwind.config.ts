@@ -86,10 +86,16 @@ const config: Config = {
             height: "0",
           },
         },
+        slide: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        "accordion-down": "accordion-down 0.3s ease-out",
+        "accordion-up": "accordion-up 0.3s ease-out",
+        slide: 'slide 45s linear infinite',
+        pause: 'slide 45s linear infinite paused',
       },
     },
   },

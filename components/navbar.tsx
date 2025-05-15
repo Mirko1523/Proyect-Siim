@@ -60,7 +60,7 @@ export default function Navbar() {
           <div className="h-14 w-14 relative rounded-full overflow-hidden">
             <Image src="/images/logosim-Photoroom.png" alt="SIIM Logo" fill className="object-contain" />
           </div>
-          <span className={`ml-3 text-xl font-bold ${isScrolled ? "text-primary" : "text-white"}`}>SIIM</span>
+          <span className={`ml-3 text-xl font-bold ${isScrolled ? "text-primary" : "text-white"}`}>Ingenieria y Mantenimiento</span>
         </div>
 
         {/* Desktop Navigation */}

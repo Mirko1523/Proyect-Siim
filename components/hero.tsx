@@ -101,17 +101,19 @@ export default function Hero() {
             animate={isLoaded ? "visible" : "hidden"}
             variants={contentVariants}
           >
-            <motion.h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4" variants={itemVariants}>
+            <motion.h1 className="text-4xl md:text-5xl lg:text-5xl font-bold text-white mb-4" variants={itemVariants}>
               Soluciones Integrales en Ingeniería y Mantenimiento
             </motion.h1>
 
             <motion.p className="text-lg text-gray-100 mb-8" variants={itemVariants}>
               Empresa dedicada a brindar soluciones de ingeniería y mantenimiento de alta calidad en todo el suelo
               Argentino.
+              <br />
+              Nos apoyam nuestros años de experiencia y un equipo altamente capacitado para ofrecer servicios
             </motion.p>
-
+           
             <motion.div variants={itemVariants}>
-              <a href="#contact" className="btn-primary inline-block hover:scale-105 transition-transform">
+              <a href="#contact" className="btn-primary inline-block hover:scale-105 transition-transform rounded-xl">
                 Contáctenos
               </a>
             </motion.div>

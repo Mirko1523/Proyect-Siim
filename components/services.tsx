@@ -3,61 +3,26 @@ import ServiceCard from "./service-card"
 const services = [
   {
     id: 1,
-    title: "Ingeniería de Procesos",
-    description: "Optimización y diseño de procesos industriales para mejorar la eficiencia y productividad.",
-    imageSrc: "/images/IngenieriaDeProcesos.png",
-    anchor: "ingenieria-procesos",
+    title: "Construcciones Civiles y Mantenimiento",
+    description: "Nos especializamos en diseño de proyectos edilicios,paisajismo, urbanismo y diseño de interiores. A su vez, realizamos mantenimiento preventivo.",
+    imageSrc: "/images/construccionescivilesymantenimiento.webp",
+    anchor: "ingenieria-construccion",
   },
   {
     id: 2,
-    title: "Gestión de Activos",
-    description: "Administración eficiente del ciclo de vida de los activos para maximizar su valor y rendimiento.",
-    imageSrc: "/images/gestiondeactivos.png",
+    title: "Refrigeración Industrial",
+    description: "Realizamos servicios de mantenimiento de aire acondicionado, sistemas Roof Top y equipos de refrigeración además de la venta de repuestos.",
+    imageSrc: "/images/RefrigeracionIndustrial.jpg",
     anchor: "gestion-activos",
   },
   {
     id: 3,
-    title: "Construcciones Civiles",
-    description: "Desarrollo de proyectos de construcción civil con los más altos estándares de calidad y seguridad.",
-    imageSrc: "/images/construccionesciviles.jpg",
+    title: "Energia Electrica y Generación",
+    description: "Desarrollo de proyectos Eléctricos con relevamiento de instalaciones y mediciones.",
+    imageSrc: "/images/Energiaelectricaygeneración.jpeg",
     anchor: "construcciones-civiles",
   },
-  {
-    id: 4,
-    title: "Proyectos Eléctricos",
-    description: "Diseño e implementación de sistemas eléctricos para todo tipo de instalaciones industriales.",
-    imageSrc: "/images/proyectoselectricos.webp",
-    anchor: "proyectos-electricos",
-  },
-  {
-    id: 5,
-    title: "Generación de Energía",
-    description: "Soluciones de generación de energía eficientes y sostenibles para necesidades industriales.",
-    imageSrc: "/images/generacioningenieria.jpeg",
-    anchor: "generacion-energia",
-  },
-  {
-    id: 6,
-    title: "Redes de Protección contra Incendios",
-    description:
-      "Diseño e instalación de sistemas de protección contra incendios que cumplen con las normativas vigentes.",
-    imageSrc: "/images/redesdeincendio.jpeg",
-    anchor: "redes-incendio",
-  },
-  {
-    id: 7,
-    title: "Refrigeración Industrial",
-    description: "Sistemas de refrigeración industrial de alta eficiencia para procesos productivos.",
-    imageSrc: "/images/refrigeracionindustrial.jpeg",
-    anchor: "refrigeracion-industrial",
-  },
-  {
-    id: 8,
-    title: "Mantenimiento Civil y Mecánico",
-    description: "Servicios de mantenimiento preventivo y correctivo para instalaciones civiles y equipos mecánicos.",
-    imageSrc: "/images/Mantenimientocivilymecanico.jpg",
-    anchor: "mantenimiento-civil",
-  },
+ 
 ]
 
 export default function Services() {
@@ -66,9 +31,12 @@ export default function Services() {
       <div className="container">
         <h2 className="section-title">Nuestros Servicios</h2>
         <p className="section-description">
-          Ofrecemos una amplia gama de servicios de ingeniería y mantenimiento para satisfacer las necesidades de
-          nuestros clientes.
-        </p>
+  Tenemos la misión de satisfacer las necesidades de nuestros clientes, 
+  apoyándonos en nuestro talento humano, la tecnología y la experiencia 
+  adquirida, y garantizando excelencia, calidad, eficiencia, agilidad 
+  y profesionalismo.
+</p>
+
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (

@@ -1,31 +1,21 @@
 "use client"
 
-import { motion } from "framer-motion"
+import Link from 'next/link'
+import { motion } from 'framer-motion'
 
-// Define service categories and their sub-services
 const serviceCategories = [
   {
-    name: "Ingeniería",
-    services: [
-      { name: "Ingeniería de Procesos", href: "#ingenieria-procesos" },
-      { name: "Gestión de Activos", href: "#gestion-activos" },
-      { name: "Proyectos Eléctricos", href: "#proyectos-electricos" },
-    ],
+    name: "Construcciones Civiles y mantenimiento",
+    slug: "Construcciones",
+    
   },
   {
-    name: "Construcción",
-    services: [
-      { name: "Construcciones Civiles", href: "#construcciones-civiles" },
-      { name: "Redes de Protección contra Incendios", href: "#redes-incendio" },
-    ],
+    name: "Refrigeracion Industrial",
+    slug: "Refrigeracion"
   },
   {
-    name: "Mantenimiento",
-    services: [
-      { name: "Mantenimiento Civil y Mecánico", href: "#mantenimiento-civil" },
-      { name: "Refrigeración Industrial", href: "#refrigeracion-industrial" },
-      { name: "Generación de Energía", href: "#generacion-energia" },
-    ],
+    name: "Energia electrica y Generación",
+    slug: "energia"
   },
 ]
 
@@ -59,30 +49,25 @@ export default function ServiceDropdown({ isScrolled = true, isMobile = false, c
   }
 
   return (
-    <motion.div className={isMobile ? "" : "py-2"} initial="hidden" animate="visible" variants={containerVariants}>
+    <motion.div
+      className={isMobile ? "" : "py-2"}
+      initial="hidden"
+      animate="visible"
+      variants={containerVariants}
+    >
       {serviceCategories.map((category, index) => (
-        <div key={category.name} className={isMobile ? "mb-3" : ""}>
-          <motion.div
-            variants={itemVariants}
-            className={`px-4 py-2 font-medium ${isMobile ? "text-secondary" : "text-primary"}`}
-          >
-            {category.name}
+        <div key={category.slug} className={isMobile ? "mb-3" : ""}>
+          <motion.div variants={itemVariants}>
+            <Link
+              href={`/services/${category.slug}`}
+              onClick={handleClick}
+              className={` hover:text-secondary block px-4 py-2 font-medium ${isMobile ? "text-secondary" : "text-primary"}`}
+            >
+              {category.name}
+            </Link>
           </motion.div>
-          <div className={isMobile ? "ml-2" : ""}>
-            {category.services.map((service) => (
-              <motion.a
-                key={service.name}
-                href={service.href}
-                className={`block px-4 py-2 text-sm hover:bg-gray-100 ${isMobile ? "text-primary" : "text-gray-700"}`}
-                onClick={handleClick}
-                variants={itemVariants}
-              >
-                {service.name}
-              </motion.a>
-            ))}
-          </div>
           {index < serviceCategories.length - 1 && !isMobile && (
-            <motion.div variants={itemVariants} className="mx-2 my-1 border-t border-gray-200"></motion.div>
+            <motion.div variants={itemVariants} className="mx-2 my-1 border-t border-gray-200 " />
           )}
         </div>
       ))}
