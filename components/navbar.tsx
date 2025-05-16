@@ -57,10 +57,15 @@ export default function Navbar() {
     >
       <div className="container flex justify-between items-center">
         <div className="flex items-center">
-          <div className="h-14 w-14 relative rounded-full overflow-hidden">
-            <Image src="/images/logosim-Photoroom.png" alt="SIIM Logo" fill className="object-contain" />
+          <div className="relative h-28 w-28 -mb-8 -mt-2 rounded-full overflow-hidden">
+          <Image
+    src="/images/logonavbar.png"
+    alt="SIIM Logo"
+    fill
+    className="object-contain"
+  />
           </div>
-          <span className={`ml-3 text-xl font-bold ${isScrolled ? "text-primary" : "text-white"}`}>Ingenieria y Mantenimiento</span>
+         
         </div>
 
         {/* Desktop Navigation */}

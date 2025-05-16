@@ -21,6 +21,7 @@ const services = [
     description: "Desarrollo de proyectos Eléctricos con relevamiento de instalaciones y mediciones.",
     imageSrc: "/images/Energiaelectricaygeneración.jpeg",
     anchor: "construcciones-civiles",
+    
   },
  
 ]

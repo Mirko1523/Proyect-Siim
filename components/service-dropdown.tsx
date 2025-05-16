@@ -6,12 +6,12 @@ import { motion } from 'framer-motion'
 const serviceCategories = [
   {
     name: "Construcciones Civiles y mantenimiento",
-    slug: "Construcciones",
+    slug: "construcciones",
     
   },
   {
     name: "Refrigeracion Industrial",
-    slug: "Refrigeracion"
+    slug: "refrigeraciones"
   },
   {
     name: "Energia electrica y Generación",
@@ -59,7 +59,7 @@ export default function ServiceDropdown({ isScrolled = true, isMobile = false, c
         <div key={category.slug} className={isMobile ? "mb-3" : ""}>
           <motion.div variants={itemVariants}>
             <Link
-              href={`/services/${category.slug}`}
+              href={`/${category.slug}`}
               onClick={handleClick}
               className={` hover:text-secondary block px-4 py-2 font-medium ${isMobile ? "text-secondary" : "text-primary"}`}
             >

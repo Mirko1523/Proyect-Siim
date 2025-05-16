@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Linkedin } from "lucide-react"
+import Image from "next/image"
 
 export default function Footer() {
   return (
@@ -6,7 +7,9 @@ export default function Footer() {
       <div className="container">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">SIIM</h3>
+              <div className="h-14 w-14 relative rounded-full overflow-hidden">
+              <Image src="/images/logonavbar.png" alt="SIIM Logo" fill className="object-contain" />
+              </div>
             <p className="mb-2">Brindamos soluciones en Ingeniería y Mantenimiento</p>
             <p>Empresa dedicada a brindar soluciones de alta calidad en todo el suelo Argentino.</p>
           </div>
