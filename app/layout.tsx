@@ -4,11 +4,12 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import WhatsAppButton from "@/components/whatsapp-button"
 
+
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "SIIM - Soluciones Integrales en Ingeniería y Mantenimiento",
-  description: "Empresa joven de ingeniería y mantenimiento basada en Rosario, Santa Fe, Argentina",
+  description: "Empresa ingeniería y mantenimiento en Argentina",
     generator: 'v0.dev'
 }
 
@@ -20,8 +21,10 @@ export default function RootLayout({
   return (
     <html lang="es" className="scroll-smooth">
       <body className={inter.className}>
-        {children}
-        <WhatsAppButton />
+     
+          {children}
+          <WhatsAppButton/>
+      
       </body>
     </html>
   )
