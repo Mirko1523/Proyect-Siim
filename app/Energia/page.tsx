@@ -86,7 +86,7 @@ export default function Energia() {
           className="object-cover"
           priority
           sizes="100vw"
-          onLoadingComplete={() => setIsLoaded(true)}
+          onLoad={() => setIsLoaded(true)}
         />
         {/* Overlay to ensure text readability */}
         <div className="absolute inset-0 bg-black/40"></div>
