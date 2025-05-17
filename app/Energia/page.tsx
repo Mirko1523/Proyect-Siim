@@ -8,29 +8,29 @@ import NavbarR from "@/components/navbarRoutes"
 const services = [
   {
     id: 1,
-    title: "Desarrollo de Proyectos",
-    description: "Nos especializamos en diseño de proyectos edilicios, paisajismo, urbanismo y diseño de interiores, dando soluciones arquitectónicas al cliente.",
+    title: "Tableros Electricos",
+    description: "Realizamos el armado e instalacion de tableros con energias limpias y renovables según la Ley Nacional 27424 y Provincial 12503.",
     imageSrc: "/images/desarrolloProyecto.jpeg",
     anchor: "construcciones",
   },
   {
     id: 2,
-    title: "Mantenimiento Edilicio",
-    description: "Nos Dedicamos al servicio de Mantenimiento preventivo Edilicio de locales comerciales, a la ejecución de obras menores de remodelacion,tareas correctivas y reparaciones menores.",
+    title: "Instalaciones Electricas",
+    description: "Nos dedicamos a las instalaciones para uso General(Viviendas, Locales), Especiales (Industrias), Contingencias y Estabilizadas",
     imageSrc: "/images/mantenimiento.png",
     anchor: "refrigeraciones",
   },
   {
     id: 3,
-    title: "Servicios Industriales",
-    description: "Realizamos mantenimientos industriales: Reacondicionamiento e instalacion de cañerias (vapor, aire comprimido y cañería sanitaria), Mantenimiento de calderas, Fabricación de Tanques de Agua.",
+    title: "Relevamiento de Instalaciones",
+    description: "Realizamos instalaciones de Canalizadores, Cableados y Tableros Eléctricos, Sistemas de puesta a tierra y Planimetría unifilar",
     imageSrc: "/images/serviciosInd.jpg",
     anchor: "energia",
   },
   {
     id: 4,
-    title: "Mantenimiento de las instalaciones fijas contra Incendio",
-    description: "Diseñamos y ejecutamos planes de inspección, prueba y mantenimiento contra incendios instalados apegándose a la NFPA 25 pero adaptandonos a las necesidades especificas de cada cliente.",
+    title: "Mediciones",
+    description: "Medimos Voltaje e Intensidad de Corriente total en TGBT y realizamos Veirifcacion de alimentador y circuitos.",
     imageSrc: "/images/MantenimientoIncendio.png",
     anchor: "energia",
   },
@@ -58,14 +58,14 @@ export default function Construcciones() {
       <div>
         <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white">
           <h1 className="text-4xl md:text-4xl text-center font-bold">Energia Electrica y Generación</h1>
-          <p className="mt-4 text-sm md:text-lg text-center">Ingeniería y cálculo de solicitud de grupos electrógenos en base a la potencia requerida.</p>
+          <p className="mt-4 text-sm md:text-lg text-center">Nos especializamos en Proyectos Eléctricos de baja tensión para cualquier propósito requerido.</p>
         </div>
       </div>
 
       <div>
         <section id="services" className="py-16 bg-gray-100">
           <div className="container">
-            <h2 className="section-title">Nuestros Servicios:</h2>
+            <h2 className="section-title">Nuestros Servicios Electricos</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {services.slice(0, 3).map(service => (
