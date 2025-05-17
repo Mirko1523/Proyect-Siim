@@ -59,10 +59,12 @@ const config: Config = {
       textColor: {
         primary: "#0e3b5d",
         secondary: "#e9a826",
+        
       },
       backgroundColor: {
         primary: "#0e3b5d",
         secondary: "#e9a826",
+        terciary: '#011c3d',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -92,10 +94,10 @@ const config: Config = {
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.3s ease-out",
-        "accordion-up": "accordion-up 0.3s ease-out",
-        slide: 'slide 45s linear infinite',
-        pause: 'slide 45s linear infinite paused',
+        "accordion-down": "accordion-down 0.5s ease-out",
+        "accordion-up": "accordion-up 0.5s ease-out",
+        slide: 'slide 100s linear infinite',
+        pause: 'slide 100s linear infinite paused',
       },
     },
   },

@@ -15,7 +15,7 @@ export default async function Home() {
       <Navbar />
       <Hero />
       <Services />
-      <div className="font-bold text-blue-950 flex flex-col items-center justify-center bg-gray-50">
+      <div className="font-bold text-blue-950 flex flex-col items-center justify-center bg-gray-50 ">
         <h1>Nuestros clientes:</h1>
       </div>
       <LogoCarousel />

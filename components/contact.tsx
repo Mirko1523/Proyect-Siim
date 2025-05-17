@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 
 export default function Contact() {
@@ -18,32 +17,33 @@ export default function Contact() {
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Here you would typically send the form data to your backend
-    console.log("Form submitted:", formData)
-    alert("Gracias por contactarnos. Nos comunicaremos a la brevedad.")
-    setFormData({
-      firstName: "",
-      lastName: "",
-      email: "",
-      phone: "",
-      message: "",
-    })
-  }
-
   return (
     <section id="contact" className="py-16">
       <div className="container">
         <h2 className="section-title">Contáctenos</h2>
         <p className="section-description">
-          Estamos listos para ayudarle con sus proyectos de ingeniería y mantenimiento. Complete el formulario y nos
+          Estamos listos para ayudarle con sus proyectos. Complete el formulario y nos
           pondremos en contacto a la brevedad.
         </p>
 
         <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-8">
-          <form onSubmit={handleSubmit}>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          <form
+            action="https://formsubmit.co/milermirko1@gmail.com"
+            method="POST"
+            className="space-y-6"
+          >
+            {/* Anti‑spam honeypot */}
+            <input type="hidden" name="_honeypot" value="" />
+            {/* Asunto */}
+            <input type="hidden" name="_subject" value="Nuevo mensaje de cliente" />
+            {/* Reply-To para responder directamente */}
+            <input
+              type="hidden"
+              name="_replyto"
+              value={formData.email}
+            />
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="firstName" className="block text-gray-700 font-medium mb-2">
                   Nombre
@@ -74,7 +74,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
                   Email
@@ -105,7 +105,7 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="mb-6">
+            <div>
               <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
                 Mensaje
               </label>
@@ -117,7 +117,7 @@ export default function Contact() {
                 required
                 rows={5}
                 className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
-              ></textarea>
+              />
             </div>
 
             <div className="text-center">

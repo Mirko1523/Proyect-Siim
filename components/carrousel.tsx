@@ -15,7 +15,10 @@ const logos = [
     '/images/logoBancoNacion.png',
     '/images/logoFTNet.png',
     '/images/logoCredicoop.jpg',
- 
+     '/images/logototalfrio.jpg',
+    '/images/logogobierno.jpg',
+    '/images/logoCalisa.png',
+    '/images/logoMotta.png',
     
 ];
 

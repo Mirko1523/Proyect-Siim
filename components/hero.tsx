@@ -44,10 +44,7 @@ export default function Hero() {
   }
 
   return (
-    <section
-      id="hero"
-      className="relative pt-24 pb-16 md:pt-32 md:pb-24 min-h-[90vh] flex items-center overflow-hidden"
-    >
+    <section id="hero" className="relative min-h-[100vh] flex items-center justify-center overflow-hidden">
       {/* Background */}
       <motion.div
         className="absolute inset-0 z-0"
@@ -64,58 +61,62 @@ export default function Hero() {
           sizes="100vw"
           onLoad={() => setIsLoaded(true)}
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-black/50" />
       </motion.div>
 
-      <div className="container relative z-10">
-        <div className="flex flex-col md:flex-row items-center">
-          {/* Text Content */}
+      <div className="container relative z-10 mx-auto mt-10 px-4 py-12 sm:py-16 md:py-20 lg:py-24">
+        {/* Main content container */}
+        <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between gap-10 lg:gap-16">
+          {/* Text Content - centered on all screen sizes */}
           <motion.div
-            className="md:w-1/2 mb-8 md:mb-0"
+            className="w-full lg:w-3/5 text-center max-w-2xl mx-auto"
             initial="hidden"
             animate={isLoaded ? "visible" : "hidden"}
             variants={contentVariants}
           >
             <motion.h1
-              className="text-4xl md:text-5xl lg:text-5xl font-bold text-white mb-4"
+              className="text-3xl sm:text-5xl md:text-5xl font-bold text-white mt-9 md:mb-9 leading-tight"
               variants={itemVariants}
             >
               Soluciones Integrales en Ingeniería y Mantenimiento
             </motion.h1>
-            <motion.p className="text-lg text-gray-100 mb-8" variants={itemVariants}>
-              Empresa dedicada a brindar soluciones de ingeniería y mantenimiento de alta calidad en todo el suelo Argentino.
-              <br />
+            <motion.p className="text-base sm:text-lg text-gray-100 mb-5 md:mb-4 mx-auto" variants={itemVariants}>
+              Empresa dedicada a brindar soluciones de ingeniería y mantenimiento de alta calidad en todo el suelo
+              Argentino.
+              <br className="hidden sm:block" />
               Nos apoyamos en nuestros años de experiencia y un equipo altamente capacitado para ofrecer servicios.
             </motion.p>
-            <motion.div variants={itemVariants}>
+            <motion.div variants={itemVariants} className="mt-8">
               <a
                 href="#contact"
-                className="btn-primary inline-block hover:scale-105 transition-transform rounded-xl"
+                 className=" bg-secundary btn-primary inline-block hover:scale-105 transition-transform rounded-xl"
               >
                 Contáctenos
               </a>
             </motion.div>
           </motion.div>
 
-          {/* Logo */}
-          <div className="md:w-1/2 flex justify-end">
-            <motion.div
-              className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96"
-              initial="hidden"
-              animate={isLoaded ? "visible" : "hidden"}
-              variants={logoVariants}
-            >
+          {/* Logo - hidden on smaller screens, visible on lg and up */}
+          {/* <motion.div
+            className="hidden lg:flex lg:w-2/5 justify-center items-center"
+            initial="hidden"
+            animate={isLoaded ? "visible" : "hidden"}
+            variants={logoVariants}
+          >
+            <div className="relative w-80 h-80 xl:w-96 xl:h-96">
               <Image
                 src="/images/logosim-Photoroom.png"
                 alt="SIIM Logo"
                 fill
-                className="object-contain"
-                sizes="(max-width: 768px) 256px, (max-width: 1024px) 320px, 384px"
+                className="object-contain drop-shadow-2xl"
+                sizes="(min-width: 1280px) 384px, 320px"
               />
-            </motion.div>
-          </div>
+            </div>
+          </motion.div> */}
         </div>
       </div>
     </section>
   )
 }
+
+
