@@ -52,7 +52,7 @@ export default function NavbarR() {
 return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-sky-950 shadow-md py-2" : "bg-transparent py-4"
+        isScrolled ? "bg-blue-950 shadow-md py-2" : "bg-transparent py-4"
       }`}
     >
       <div className="container flex justify-between items-center">
