@@ -43,9 +43,9 @@ export default function ServiceDropdown({ isScrolled = true, isMobile = false, c
   }
 
   const handleClick = () => {
-    if (!isMobile) {
+    // if (!isMobile) {
       closeDropdown()
-    }
+    // }
   }
 
   return (
@@ -60,14 +60,17 @@ export default function ServiceDropdown({ isScrolled = true, isMobile = false, c
           <motion.div variants={itemVariants}>
             <Link
               href={`/${category.slug}`}
-              onClick={handleClick}
-              className={` hover:text-secondary block px-4 py-2 font-medium ${isMobile ? "text-secondary" : "text-primary"}`}
+              onClick={() => {
+                console.log(`Navigating to /${category.slug}`);
+                closeDropdown();
+              }}
+              className={` hover:text-secondary block px-4 py-2 font-medium ${isMobile ? "text-primary" : "text-primary"}`}
             >
               {category.name}
             </Link>
           </motion.div>
           {index < serviceCategories.length - 1 && !isMobile && (
-            <motion.div variants={itemVariants} className="mx-2 my-1 border-t border-gray-200 " />
+            <motion.div  variants={itemVariants} className="mx-2 my-1 border-t border-gray-200 " />
           )}
         </div>
       ))}

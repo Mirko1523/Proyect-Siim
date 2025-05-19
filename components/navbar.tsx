@@ -61,7 +61,6 @@ export default function Navbar() {
           <Image
     src="/images/logonavbar.png"
     alt="SIIM Logo"
-    // fill
     width={144}
     height={144}
     className="object-contain"
@@ -148,9 +147,18 @@ export default function Navbar() {
                     </button>
                     {/* Mobile Dropdown */}
                     {activeDropdown === link.name && (
-                      <div className="mt-2 ml-4 space-y-2">
-                        <ServiceDropdown isMobile={true} closeDropdown={() => {}} />
-                      </div>
+                     <div className="mt-2 ml-4 space-y-2"
+                     onClick={() => console.log("Clic en el contenedor padre")}
+                     >
+                      
+                     <ServiceDropdown
+                       isMobile={true}
+                       closeDropdown={() => {
+                         setActiveDropdown(null); // Cierra el desplegable
+                         setIsOpen(false);       // Cierra el menú móvil
+                       }}
+                     />
+                   </div>
                     )}
                   </div>
                 ) : (
