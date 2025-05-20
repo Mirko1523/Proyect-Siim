@@ -10,7 +10,7 @@ export default function ServiceButton({ slug, label = 'Ver más' }: ServiceButto
   return (
     <Link
       href={`${slug}`}
-      className="mt-3 inline-block px-4 py-2 bg-primary}  text-white rounded-lg hover:bg-secondary transition-colors duration-200 text-sm md:text-base "
+      className="mt-3 inline-block px-4 py-2 bg-primary text-white rounded-lg hover:bg-secondary transition-colors duration-200 text-sm md:text-base "
     >
       {label}
     </Link>

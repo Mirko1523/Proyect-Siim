@@ -8,30 +8,23 @@ import NavbarR from "@/components/navbarRoutes"
 const services = [
   {
     id: 1,
-    title: "Tableros Electricos",
-    description: "Realizamos el armado e instalacion de tableros con energias limpias y renovables según la Ley Nacional 27424 y Provincial 12503.",
-    imageSrc: "/images/desarrolloProyecto.jpeg",
+    title: "Tableros Electricos e Instalaciones Electricas",
+    description: "Realizamos el armado, instalación y mantenimiento preventivo/correctivo de tableros eléctricos para uso general, industrial, de contingencia y energías renovables (Ley 27424 y Prov. 12503), canalizaciones livianas, semipesadas, antivandálicas e ignífugas con tendido de circuitos, armado de tableros principales y seccionales, correcciones, ampliaciones y adecuaciones según normativas vigentes, y medición y control de protecciones.",
+    imageSrc: "/images/tableroselectricos.jpg",
     anchor: "construcciones",
   },
   {
     id: 2,
-    title: "Instalaciones Electricas",
-    description: "Nos dedicamos a las instalaciones para uso General(Viviendas, Locales), Especiales (Industrias), Contingencias y Estabilizadas",
-    imageSrc: "/images/mantenimiento.png",
-    anchor: "refrigeraciones",
-  },
-  {
-    id: 3,
-    title: "Relevamiento de Instalaciones",
-    description: "Realizamos instalaciones de Canalizadores, Cableados y Tableros Eléctricos, Sistemas de puesta a tierra y Planimetría unifilar",
-    imageSrc: "/images/serviciosInd.jpg",
+    title: "Relevamiento de medicion de instalaciones",
+    description: "Realizamos el armado, instalación y mantenimiento preventivo y correctivo de tableros eléctricos (uso general, industrial, de contingencia y renovables según Ley 27424 y Prov. 12503); canalizaciones livianas, semipesadas, antivandálicas e ignífugas con tendido de circuitos; corrección, ampliación y adecuación de tableros principales y seccionales según normativas vigentes; y medición y control de protecciones.",
+    imageSrc: "/images/medicion.jpg",
     anchor: "energia",
   },
   {
-    id: 4,
-    title: "Mediciones",
-    description: "Medimos Voltaje e Intensidad de Corriente total en TGBT y realizamos Veirifcacion de alimentador y circuitos.",
-    imageSrc: "/images/MantenimientoIncendio.png",
+    id: 3,
+    title: "Generación Electrica",
+    description: "Realizamos el armado, instalación y mantenimiento de tableros eléctricos (uso general, industrial, contingencia y renovables según Ley 27424 y Prov. 12503), canalizaciones livianas a semipesadas, corrección y adecuación normativa de tableros principales y seccionales, y medición de protecciones.",
+    imageSrc: "/images/generacion.jpg",
     anchor: "energia",
   },
 ]
@@ -40,10 +33,7 @@ export default function Construcciones() {
   return (
     <div>
       <NavbarR />
-      <motion.div
-        className="absolute inset-0 z-"
-        initial="hidden"
-      >
+      <motion.div className="absolute inset-0 z-" initial="hidden">
         <Image
           src="/images/electricista.jpg"
           alt="Background"
@@ -58,14 +48,16 @@ export default function Construcciones() {
       <div>
         <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white">
           <h1 className="text-4xl md:text-4xl text-center font-bold">Energia Electrica y Generación</h1>
-          <p className="mt-4 text-sm md:text-lg text-center">Nos especializamos en Proyectos Eléctricos de baja tensión para cualquier propósito requerido.</p>
+          <p className="mt-4 text-sm md:text-lg text-center">
+            Nos especializamos en Proyectos Eléctricos de baja tensión para cualquier propósito requerido.
+          </p>
         </div>
       </div>
 
       <div>
         <section id="services" className="py-16 bg-gray-100">
-          <div className="container">
-            <h2 className="section-title">Nuestros Servicios Electricos</h2>
+          <div className="container mx-auto px-4">
+            <h2 className="section-title text-3xl font-bold text-center mb-10">Nuestros Servicios Electricos</h2>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
               {services.slice(0, 3).map(service => (
@@ -75,36 +67,16 @@ export default function Construcciones() {
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <Image
-                    src={service.imageSrc}
-                    alt={service.title}
-                    width={300}
-                    height={200}
-                    className="w-full h-auto"
-                  />
+                  <div className="relative w-full h-[200px] rounded overflow-hidden">
+                    <Image
+                      src={service.imageSrc}
+                      alt={service.title}
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
                   <h3 className="text-xl font-semibold mt-4">{service.title}</h3>
                   <p className="mt-2 text-gray-600">{service.description}</p>
-                </motion.div>
-              ))}
-            </div>
-            {/* Contenedor separado para el servicio con id: 4, centrado */}
-            <div className="flex justify-center mt-8">
-              {services.slice(3).map(service => (
-                <motion.div
-                  key={service.id}
-                  className="service-card bg-white p-4 rounded-lg shadow-md w-full md:w-1/2 lg:w-1/3"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ type: "spring", stiffness: 300 }}
-                >
-                  <Image
-                    src={service.imageSrc}
-                    alt={service.title}
-                    width={300}
-                    height={200}
-                    className="w-full h-auto"
-                  />
-                  <h3 className="text-xl font-semibold mt-4">{service.title}</h3>
-                  <p className="mt-2 text-blue-950">{service.description}</p>
                 </motion.div>
               ))}
             </div>

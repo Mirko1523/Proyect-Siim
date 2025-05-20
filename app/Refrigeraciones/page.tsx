@@ -93,13 +93,14 @@ export default function Construcciones() {
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <Image
-                  src={service.imageSrc}
-                  alt={service.title}
-                  width={300}
-                  height={200}
-                  className="w-full h-[300px] object-cover rounded-md"
-                />
+                <div className="relative w-full h-[200px] rounded-md overflow-hidden">
+                  <Image
+                    src={service.imageSrc}
+                    alt={service.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
                 <h3 className="text-xl text-blue-950 font-semibold mt-4">
                   {service.title}
                 </h3>
@@ -110,7 +111,7 @@ export default function Construcciones() {
             ))}
           </div>
 
-          {/* Últimas 2 cards centradas */}
+          {/* Últimas 2 cards centradas (con object-contain para no cortar) */}
           <div className="mt-10 md:w-2/3 md:mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
             {services.slice(3).map((service) => (
               <motion.div
@@ -119,13 +120,14 @@ export default function Construcciones() {
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 300 }}
               >
-                <Image
-                  src={service.imageSrc}
-                  alt={service.title}
-                  width={300}
-                  height={200}
-                  className="w-full h-[300px] object-cover rounded-md"
-                />
+                <div className="relative w-full h-[150px] rounded-md overflow-hidden bg-gray-100">
+                  <Image
+                    src={service.imageSrc}
+                    alt={service.title}
+                    fill
+                    className="object-contain"
+                  />
+                </div>
                 <h3 className="text-xl text-blue-950 font-semibold mt-4">
                   {service.title}
                 </h3>

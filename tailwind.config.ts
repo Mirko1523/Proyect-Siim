@@ -96,8 +96,8 @@ const config: Config = {
       animation: {
         "accordion-down": "accordion-down 0.5s ease-out",
         "accordion-up": "accordion-up 0.5s ease-out",
-        slide: 'slide 100s linear infinite',
-        pause: 'slide 100s linear infinite paused',
+        slide: 'slide 120s linear infinite',
+        pause: 'slide 120s linear infinite paused',
       },
     },
   },

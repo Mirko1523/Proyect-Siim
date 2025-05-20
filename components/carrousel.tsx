@@ -19,6 +19,7 @@ const logos = [
     '/images/logogobierno.jpg',
     '/images/logoCalisa.png',
     '/images/logoMotta.png',
+    '/images/logoAgropecuario.jpeg',
     
 ];
 
