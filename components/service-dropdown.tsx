@@ -6,16 +6,16 @@ import { motion } from 'framer-motion'
 const serviceCategories = [
   {
     name: "Construcciones Civiles y mantenimiento",
-    slug: "construcciones",
+    slug: "Construcciones",
     
   },
   {
     name: "Refrigeracion Industrial",
-    slug: "refrigeraciones"
+    slug: "Refrigeraciones"
   },
   {
     name: "Energia electrica y Generación",
-    slug: "energia"
+    slug: "Energia"
   },
 ]
 
@@ -62,7 +62,7 @@ export default function ServiceDropdown({ isScrolled = true, isMobile = false, c
               href={`/${category.slug}`}
               onClick={() => {
                 console.log(`Navigating to /${category.slug}`);
-                closeDropdown();
+                
               }}
               className={` hover:text-secondary block px-4 py-2 font-medium ${isMobile ? "text-primary" : "text-primary"}`}
             >

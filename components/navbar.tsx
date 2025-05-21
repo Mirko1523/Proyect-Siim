@@ -33,16 +33,16 @@ export default function Navbar() {
   }, [])
 
   // Handle clicks outside the dropdown to close it
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setActiveDropdown(null)
-      }
-    }
+  // useEffect(() => {
+  //   const handleClickOutside = (event: MouseEvent) => {
+  //     if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+  //       setActiveDropdown(null)
+  //     }
+  //   }
 
-    document.addEventListener("mousedown", handleClickOutside)
-    return () => document.removeEventListener("mousedown", handleClickOutside)
-  }, [])
+  //   document.addEventListener("mousedown", handleClickOutside)
+  //   return () => document.removeEventListener("mousedown", handleClickOutside)
+  // }, [])
 
   // Toggle dropdown visibility
   const toggleDropdown = (name: string) => {
@@ -148,7 +148,7 @@ export default function Navbar() {
                     {/* Mobile Dropdown */}
                     {activeDropdown === link.name && (
                      <div className="mt-2 ml-4 space-y-2"
-                     onClick={() => console.log("Clic en el contenedor padre")}
+                     onClick={() => console.log("Clic en el contenedor padre 2")}
                      >
                       
                      <ServiceDropdown
