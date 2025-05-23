@@ -6,21 +6,21 @@ const services = [
     title: "Construcciones Civiles y Mantenimiento",
     description: "Nos especializamos en diseño de proyectos edilicios,paisajismo, urbanismo y diseño de interiores. A su vez, realizamos mantenimiento preventivo.",
     imageSrc: "/images/construccionescivilesymantenimiento.webp",
-    anchor: "construcciones",
+    anchor: "Construcciones",
   },
   {
     id: 2,
     title: "Refrigeración Industrial",
     description: "Realizamos servicios de mantenimiento de aire acondicionado, sistemas Roof Top y equipos de refrigeración además de la venta de repuestos.",
     imageSrc: "/images/RefrigeracionIndustrial.jpg",
-    anchor: "refrigeraciones",
+    anchor: "Refrigeraciones",
   },
   {
     id: 3,
     title: "Energia Electrica y Generación",
     description: "Desarrollo de proyectos Eléctricos con relevamiento de instalaciones y mediciones.",
     imageSrc: "/images/Energiaelectricaygeneración.jpeg",
-    anchor: "energia",
+    anchor: "Energia",
   },
 ]
 

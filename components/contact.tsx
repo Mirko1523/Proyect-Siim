@@ -28,7 +28,7 @@ export default function Contact() {
 
         <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-8">
           <form
-            action="https://formsubmit.co/milermirko1@gmail.com"
+            action="https://formsubmit.co/siim.asesoramientosyventas@gmail.com"
             method="POST"
             className="space-y-6"
           >

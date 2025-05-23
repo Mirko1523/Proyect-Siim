@@ -58,13 +58,16 @@ export default function Navbar() {
       <div className="container flex justify-between items-center">
         <div className="flex items-center">
           <div className="relative -mb-8 -mt-2 rounded-full overflow-hidden">
-          <Image
-    src="/images/logonavbar.png"
-    alt="SIIM Logo"
-    width={144}
-    height={144}
-    className="object-contain"
-  />
+             <a href="/">
+                    <Image
+              src="/images/logonavbar.png"
+              alt="SIIM Logo"
+              // fill
+              width={144}
+              height={144}
+              className="object-contain"
+            />
+            </a>
           </div>
          
         </div>
@@ -117,7 +120,7 @@ export default function Navbar() {
 
         {/* Mobile Navigation Toggle */}
         <button
-          className={`md:hidden ${isScrolled ? "text-primary" : "text-white"}`}
+          className={`md:hidden ${isScrolled ? "text-white" : "text-white"}`}
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >

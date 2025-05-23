@@ -3,7 +3,7 @@
 import Image from "next/image"
 import { motion } from "framer-motion"
 import Footer from "@/components/footer"
-import Navbar from "@/components/navbar"
+import NavbarR from "@/components/navbarRoutes"
 
 const services = [
   {
@@ -43,7 +43,7 @@ const services = [
 export default function Construcciones() {
   return (
     <div>
-      <Navbar />
+      <NavbarR />
 
       <motion.div className="absolute inset-0 z-0" initial="hidden">
         <Image

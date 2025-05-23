@@ -33,16 +33,16 @@ export default function NavbarR() {
   }, [])
 
   // Handle clicks outside the dropdown to close it
-  useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-        setActiveDropdown(null)
-      }
-    }
+  // useEffect(() => {
+  //   const handleClickOutside = (event: MouseEvent) => {
+  //     if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+  //       setActiveDropdown(null)
+  //     }
+  //   }
 
-    document.addEventListener("mousedown", handleClickOutside)
-    return () => document.removeEventListener("mousedown", handleClickOutside)
-  }, [])
+  //   document.addEventListener("mousedown", handleClickOutside)
+  //   return () => document.removeEventListener("mousedown", handleClickOutside)
+  // }, [])
 
   // Toggle dropdown visibility
   const toggleDropdown = (name: string) => {
@@ -58,6 +58,7 @@ return (
       <div className="container flex justify-between items-center">
         <div className="flex items-center">
           <div className="relative -mb-8 -mt-2 rounded-full overflow-hidden">
+            <a href="/">
           <Image
     src="/images/logonavbar.png"
     alt="SIIM Logo"
@@ -66,6 +67,7 @@ return (
     height={144}
     className="object-contain"
   />
+  </a>
           
           </div>
          
@@ -119,7 +121,7 @@ return (
 
         {/* Mobile Navigation Toggle */}
         <button
-          className={`md:hidden ${isScrolled ? "text-primary" : "text-white"}`}
+          className={`md:hidden ${isScrolled ? "text-white" : "text-white"}`}
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >

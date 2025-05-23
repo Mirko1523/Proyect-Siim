@@ -16,6 +16,7 @@ html {
 body {
   color: var(--foreground);
   background: var(--background);
+  margin: 0;
 }
 
 @layer components {
@@ -44,3 +45,4 @@ body {
 .will-change-transform {
   will-change: transform;
 }
+
