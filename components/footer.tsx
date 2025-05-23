@@ -26,7 +26,7 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Síguenos en todas las redes:</h3>
             <div className="flex space-x-4">
               <a
-                href="https://www.facebook.com/siim"
+                href="https://www.facebook.com/profile.php?id=61552293417403"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-secondary transition duration-300"
