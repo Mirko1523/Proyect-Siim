@@ -80,16 +80,6 @@ export default function Hero() {
             >
               Soluciones Integrales en Ingeniería y Mantenimiento
             </motion.h1>
-            <motion.p className="text-base font-bold sm:text-lg text-gray-100 mb-5 md:mb-4 mx-auto" variants={itemVariants}>
-            SIIM, empresa dedicada a brindar soluciones en Ingeniería Electromecánica y Mantenimiento Industrial 
-            apuntado a empresas chicas como asi también a empresas de alto volumen. 
-            Nos especializamos en una correcta Gestión de Activos desde la concepción de un requerimiento 
-            hasta la presentación de la mejor alternativa, con opción llave en mano y gestión de documentación si asi lo requiera.  
-            Nos apoyamos en nuestros años de experiencia y una completa red de proveedores profesionales y de alta calidad de servicios.
-
-              <br className="hidden sm:block" />
-              SIIM asume su compromiso con la preservación del medio ambiente y la sustentabilidad, por tal motivos centramos nuestras actividades en los mejores estándares de cumplimiento.
-            </motion.p>
             <motion.div variants={itemVariants} className="mt-8">
               <a
                 href="#contact"
@@ -99,24 +89,6 @@ export default function Hero() {
               </a>
             </motion.div>
           </motion.div>
-
-          {/* Logo - hidden on smaller screens, visible on lg and up */}
-          {/* <motion.div
-            className="hidden lg:flex lg:w-2/5 justify-center items-center"
-            initial="hidden"
-            animate={isLoaded ? "visible" : "hidden"}
-            variants={logoVariants}
-          >
-            <div className="relative w-80 h-80 xl:w-96 xl:h-96">
-              <Image
-                src="/images/logosim-Photoroom.png"
-                alt="SIIM Logo"
-                fill
-                className="object-contain drop-shadow-2xl"
-                sizes="(min-width: 1280px) 384px, 320px"
-              />
-            </div>
-          </motion.div> */}
         </div>
       </div>
     </section>

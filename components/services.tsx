@@ -29,12 +29,6 @@ export default function Services() {
     <section id="services" className="py-16 bg-gray-50">
       <div className="container">
         <h2 className="section-title">Nuestros Servicios</h2>
-        <p className="section-description">
-          Tenemos la misión de satisfacer las necesidades de nuestros clientes, 
-          apoyándonos en nuestro talento humano, la tecnología y la experiencia 
-          adquirida, y garantizando excelencia, calidad, eficiencia, agilidad 
-          y profesionalismo.
-        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
             <div key={service.id} id={service.anchor}>

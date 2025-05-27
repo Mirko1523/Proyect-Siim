@@ -20,7 +20,7 @@ const services: Service[] = [
     id: 1,
     title: "Tableros Electricos e Instalaciones Electricas",
     description:
-      "Realizamos el armado, instalación y mantenimiento preventivo/correctivo de tableros eléctricos para uso general, industrial, de contingencia y energías renovables (Ley 27424 y Prov. 12503), canalizaciones livianas, semipesadas, antivandálicas e ignífugas con tendido de circuitos, armado de tableros principales y seccionales, correcciones, ampliaciones y adecuaciones según normativas vigentes, y medición y control de protecciones.",
+    "Armado de Tableros  uso general-viviendas- locales comerciales, De uso especiales- industrias, De contingencia y estabilizada, de energías limpias y renovables según lo establecido en la Ley nacional 27424 y la Provincial 12503. Canalizaciones livianas, semipesados, antivandálicas, ignifugas, etc., tendido de circuitos. Armado e instalación de tableros principales y seccionales. Corrección, ampliación y adecuación según normativas vigentes de tableros, sus componentes y aparamenta. Mantenimiento preventivo y correctivo de tableros. Medición y control de protecciones.",
     imageSrc: "/images/tableroselectricos.jpg",
     anchor: "construcciones",
   },
@@ -28,7 +28,7 @@ const services: Service[] = [
     id: 2,
     title: "Relevamiento de medicion de instalaciones",
     description:
-      "Realizamos el armado, instalación y mantenimiento preventivo y correctivo de tableros eléctricos (uso general, industrial, de contingencia y renovables según Ley 27424 y Prov. 12503); canalizaciones livianas, semipesadas, antivandálicas e ignífugas con tendido de circuitos; corrección, ampliación y adecuación de tableros principales y seccionales según normativas vigentes; y medición y control de protecciones.",
+      "Relevamiento de Canalizaciones y cableados eléctricos, tableros eléctricos, protecciones y alimentadores, sistemas de iluminación, sistema de puesta a tierra, estado, medición y certificación provinciales y locales , planimetría unifilar y de detalle. Mediciones de Voltaje e intensidad de corriente en tableros seccionales, verificación de alimentador y circuitos, voltaje e intensidad de corriente total en TGBT,factor de potencia a plena carga, secuencias de fases, análisis de redes de baja tensión, termografía de tableros, intensidad de fuga a tierra, aislamiento de circuitos.",
     imageSrc: "/images/medicion.jpg",
     anchor: "energia",
   },
@@ -36,7 +36,7 @@ const services: Service[] = [
     id: 3,
     title: "Generación Electrica",
     description:
-      "Realizamos el armado, instalación y mantenimiento de tableros eléctricos (uso general, industrial, contingencia y renovables según Ley 27424 y Prov. 12503), canalizaciones livianas a semipesadas, corrección y adecuación normativa de tableros principales y seccionales, y medición de protecciones.",
+      "Ingeniería y cálculo de solicitud de grupos electrógenos en base a la potencia requerida. Montaje e instalación de grupos electrógenos. Contrato de ABONOS de Mantenimiento Preventivo y Programado. Actualizaciones en Controladores y Tableros de Trasferencia Automática § Reparaciones integrales Motor Y  Generador,Telemetría por medio de GPRS.",
     imageSrc: "/images/generacion.jpg",
     anchor: "energia",
   },
@@ -119,7 +119,7 @@ const Construcciones: React.FC = () => {
       <section id="services" className="py-16 bg-gray-100">
         <div className="container mx-auto px-4">
           <h2 className="section-title text-3xl font-bold text-center mb-10">
-            Nuestros Servicios Electricos
+            Nuestros Servicios 
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
