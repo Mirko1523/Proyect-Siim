@@ -99,7 +99,7 @@ export default function Construcciones() {
       {/* Background */}
       <motion.div className="absolute inset-0 z-0" initial="hidden">
         <Image
-          src="/images/construccionescivilesymantenimiento.webp"
+          src="/images/bgrefrigeracion.webp"
           alt="Background"
           fill
           className="object-cover"
