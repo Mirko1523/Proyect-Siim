@@ -112,11 +112,11 @@ export default function Construcciones() {
       {/* Hero */}
       <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-white">
         <h1 className="text-4xl md:text-5xl text-center font-bold">
-          Construcciones Civiles y Mantenimiento
+        Refrigeración Industrial
         </h1>
         <p className="mt-4 text-sm md:text-lg text-center">
-          Ofrecemos servicios de construcción y mantenimiento de alta calidad y
-          con los mejores especialistas.
+        Somos especialistas en Refrigeración Industrial y Comercial dedicados a la
+          ingeniería, asesoría y distribución de los mejores equipos.
         </p>
       </div>
 
