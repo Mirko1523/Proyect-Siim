@@ -75,7 +75,8 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service, fullWidth = false })
         />
       </div>
       <h3 className="text-xl font-semibold mt-4">{service.title}</h3>
-      <p className={`mt-2 text-gray-600 flex-grow ${needsTruncate && !expanded ? 'line-clamp-4' : ''}`}>
+      {/* Cambiamos el color del texto description a blue-950 */}
+      <p className={`mt-2 text-blue-950 flex-grow ${needsTruncate && !expanded ? 'line-clamp-4' : ''}`}>
         {service.description}
       </p>
       {needsTruncate && (
@@ -127,14 +128,14 @@ export default function Construcciones() {
           </h2>
 
           {/* Primeras 3 cards */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 text-blue-950">
             {services.slice(0, 3).map(service => (
-              <ServiceCard key={service.id} service={service} />
+              <ServiceCard key={service.id} service={service}/>
             ))}
           </div>
 
           {/* Última card centrada */}
-          <div className="flex justify-center mt-8">
+          <div className="flex justify-center mt-8 text-blue-950">
             {services.slice(3).map(service => (
               <ServiceCard key={service.id} service={service} fullWidth />
             ))}

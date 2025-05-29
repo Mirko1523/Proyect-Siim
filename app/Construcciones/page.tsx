@@ -89,10 +89,10 @@ export default function Construcciones() {
                     className="object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-semibold mt-4">
+                <h3 className="text-xl text-blue-950 font-semibold mt-4">
                   {service.title}
                 </h3>
-                <p className="mt-2 text-gray-600">{service.description}</p>
+                <p className="mt-2 text-blue-950">{service.description}</p>
               </motion.div>
             ))}
           </div>
@@ -113,7 +113,7 @@ export default function Construcciones() {
                     className="object-cover"
                   />
                 </div>
-                <h3 className="text-xl font-semibold mt-4">
+                <h3 className="text-xl font-semibold mt-4 text-blue-950">
                   {service.title}
                 </h3>
                 <p className="mt-2 text-blue-950">{service.description}</p>

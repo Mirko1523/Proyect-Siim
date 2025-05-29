@@ -71,7 +71,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
       <h3 className="text-xl font-semibold mt-4">{service.title}</h3>
 
       <p
-        className={`mt-2 text-gray-600 ${needsTruncate && !showFullText ? 'line-clamp-4' : ''}`}
+        className={`mt-2 text-blue-950 ${needsTruncate && !showFullText ? 'line-clamp-4' : ''}`}
       >
         {service.description}
       </p>
@@ -122,7 +122,7 @@ const Construcciones: React.FC = () => {
             Nuestros Servicios 
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 text-blue-950">
             {services.map(service => (
               <ServiceCard key={service.id} service={service} />
             ))}
