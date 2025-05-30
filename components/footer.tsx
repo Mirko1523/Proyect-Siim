@@ -16,7 +16,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-xl font-bold mb-4">Contactanos!</h3>
-            <p className="mb-2">Parana 533</p>
+            <p className="mb-2"> Parana 533 Rafaela Santa Fe Cp 2300</p>
             <p className="mb-2">Rosario, Santa Fe, Argentina</p>
             <p className="mb-2">Contacto: +54 9 3492 58-3071</p>
             <p>siim.asesoramientosyventas@gmail.com</p>

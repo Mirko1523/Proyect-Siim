@@ -90,14 +90,13 @@ const config: Config = {
         },
         slide: {
           '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(-150%)' },
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.5s ease-out",
-        "accordion-up": "accordion-up 0.5s ease-out",
-        slide: 'slide 120s linear infinite',
-        pause: 'slide 120s linear infinite paused',
+        'slide-slow':  'slide 120s linear infinite',
+        'slide-medium':'slide  60s linear infinite',
+        'slide-fast':  'slide  30s linear infinite',
       },
     },
   },
