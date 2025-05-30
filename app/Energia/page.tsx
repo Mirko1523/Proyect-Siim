@@ -111,7 +111,7 @@ const Construcciones: React.FC = () => {
             Energia Electrica y Generación
           </h1>
           <p className="mt-4 text-sm md:text-lg text-center">
-            Nos especializamos en Proyectos Eléctricos de baja tensión para cualquier propósito requerido.
+            Nos especializamos en Proyectos Eléctricos y Generación Industrial.
           </p>
         </div>
       </div>

@@ -11,7 +11,7 @@ export default function Footer() {
               <Image src="/images/logonavbar.png" alt="SIIM Logo" fill className="object-contain" />
               </div>
             <p className="mb-2">Brindamos soluciones en Ingeniería y Mantenimiento</p>
-            <p>Empresa dedicada a brindar soluciones de alta calidad en todo el suelo Argentino.</p>
+            <p>Siim una solución para cada necesidad de nuestros clientes.</p>
           </div>
 
           <div>

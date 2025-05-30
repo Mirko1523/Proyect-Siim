@@ -34,7 +34,7 @@ const services: Service[] = [
   },
   {
     id: 3,
-    title: "Servicio de Mantenimiento preventivo y correctivo",
+    title: "Servicio de Mantenimiento preventivo y correctivo en equipos de Co2",
     description:
       "Análisis de falla por seguimiento de parámetros provistos por sistema Boss, miniBoss, plan Visor. Interpretación de fallas eléctricas. Protocolo de inspección y verificación de funcionamiento. Recarga de CO₂. Análisis de fuga y detección de las mismas. Reformas y ampliaciones de cámaras.",
     imageSrc: "/images/ServiciosGasCo2.jpg",

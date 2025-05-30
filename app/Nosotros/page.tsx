@@ -19,9 +19,9 @@ const AboutUs: React.FC = () => {
   }, [])
 
   const descriptions = [
-    "SIIM se enfoca en Ingeniería Electromecánica Industrial y Civil & Mantenimiento para pequeñas y grandes empresas, ofreciendo soluciones integrales de gestión de activos llave en mano y servicios de documentación especializados que garantizan eficiencia operativa óptima y cumplimiento normativo.",
+    "SIIM, empresa dedicada a brindar soluciones en Ingeniería y Mantenimiento Industrial apuntado a empresas chicas como asi también a empresas de alto volumen. Nos especializamos en una correcta Gestión de Activos desde la concepción de un requerimiento hasta la presentación de la mejor alternativa, con opción llave en mano y gestión de documentación si asi lo requiera.",
     "Con años de experiencia en empresas corporativas y de diversos tamaños, SIIM ha construido una sólida red de proveedores de alta calidad que nos permite brindar servicios excepcionales y soluciones personalizadas que satisfacen las necesidades específicas de cada cliente en diversas industrias.",
-    "SIIM está comprometido con la preservación del medio ambiente y la sostenibilidad a través del cumplimiento de los más altos estándares de calidad, asegurando que todos nuestros proyectos y servicios contribuyan a un futuro más sostenible manteniendo la excelencia operativa."
+    "SIIM está comprometido con la preservación del medio ambiente y la sostenibilidad a través del cumplimiento de los más altos estándares de calidad, asegurando que todos nuestros proyectos y servicios contribuyan a un futuro más sustentable manteniendo la excelencia operativa."
   ]
 
   return (
@@ -66,7 +66,7 @@ const AboutUs: React.FC = () => {
             title: 'Misión',
             accent: 'bg-blue-950',
             items: [
-              'Brindar a nuestros clientes apoyo y compromiso para satisfacer sus necesidades a tiempo y en su totalidad.',
+              'Brindar a nuestros clientes un solido compromiso en satisfacer sus necesidades en tiempo y forma.',
               'Aprovechar nuestro capital humano y conocimientos acumulados para construir relaciones innovadoras basadas en la excelencia, calidad, eficiencia y satisfacción del cliente.'
             ]
           },
