@@ -19,7 +19,7 @@ export default function Footer() {
             <p className="mb-2">Parana 533</p>
             <p className="mb-2">Rosario, Santa Fe, Argentina</p>
             <p className="mb-2">Contacto: +54 9 3492 58-3071</p>
-            <p>info@siim.com.ar</p>
+            <p>siim.asesoramientosyventas@gmail.com</p>
           </div>
 
           <div>
