@@ -5,7 +5,7 @@ import Services from "@/components/services"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
 import LogoCarousel from "@/components/carrousel"
-import AboutUs from "./Nosotros/page"
+import AboutUs from "../components/nosotros/page"
 
 export default async function Home() {
   // ── Simula una llamada asíncrona:

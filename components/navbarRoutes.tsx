@@ -32,18 +32,6 @@ export default function NavbarR() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  // Handle clicks outside the dropdown to close it
-  // useEffect(() => {
-  //   const handleClickOutside = (event: MouseEvent) => {
-  //     if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
-  //       setActiveDropdown(null)
-  //     }
-  //   }
-
-  //   document.addEventListener("mousedown", handleClickOutside)
-  //   return () => document.removeEventListener("mousedown", handleClickOutside)
-  // }, [])
-
   // Toggle dropdown visibility
   const toggleDropdown = (name: string) => {
     setActiveDropdown(activeDropdown === name ? null : name)

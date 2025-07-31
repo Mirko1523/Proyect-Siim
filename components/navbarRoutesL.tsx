@@ -7,12 +7,12 @@ import ServiceDropdown from "./service-dropdown"
 
 // Define the navigation links with dropdown support
 const navLinks = [
-  { name: "Inicio", href: "#hero", hasDropdown: false },
+  { name: "Inicio", href: "/", hasDropdown: false },
   { name: "Servicios", href: "#services", hasDropdown: true },
-  { name: "Contacto", href: "#contact", hasDropdown: false },
+  { name: "Contacto", href: "/", hasDropdown: false },
 ]
 
-export default function Navbar() {
+export default function NavbarRL() {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
@@ -37,7 +37,7 @@ export default function Navbar() {
     setActiveDropdown(activeDropdown === name ? null : name)
   }
 
-  return (
+return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? "bg-blue-950 shadow-md py-2" : "bg-transparent py-4"
@@ -46,16 +46,17 @@ export default function Navbar() {
       <div className="container flex justify-between items-center">
         <div className="flex items-center">
           <div className="relative -mb-8 -mt-2 rounded-full overflow-hidden">
-             <a href="/">
-                    <Image
-              src="/images/logonavbar.png"
-              alt="SIIM Logo"
-              // fill
-              width={144}
-              height={144}
-              className="object-contain"
-            />
-            </a>
+            <a href="/">
+          <Image
+    src="/images/siimOFP.png"
+    alt="SIIM Logo"
+    // fill
+    width={125}
+    height={130}
+    className="object-contain"
+  />
+  </a>
+          
           </div>
          
         </div>
@@ -138,18 +139,9 @@ export default function Navbar() {
                     </button>
                     {/* Mobile Dropdown */}
                     {activeDropdown === link.name && (
-                     <div className="mt-2 ml-4 space-y-2"
-                     onClick={() => console.log("Clic en el contenedor padre 2")}
-                     >
-                      
-                     <ServiceDropdown
-                       isMobile={true}
-                       closeDropdown={() => {
-                         setActiveDropdown(null); // Cierra el desplegable
-                         setIsOpen(false);       // Cierra el menú móvil
-                       }}
-                     />
-                   </div>
+                      <div className="mt-2 ml-4 space-y-2">
+                        <ServiceDropdown isMobile={true} closeDropdown={() => {}} />
+                      </div>
                     )}
                   </div>
                 ) : (

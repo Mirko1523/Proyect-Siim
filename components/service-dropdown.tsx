@@ -17,6 +17,10 @@ const serviceCategories = [
     name: "Energia electrica y Generación",
     slug: "Energia"
   },
+   {
+    name: "Gradhoc",
+    slug: "Gradhoc"
+  },
 ]
 
 interface ServiceDropdownProps {

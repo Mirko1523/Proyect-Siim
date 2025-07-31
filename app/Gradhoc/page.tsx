@@ -13,6 +13,7 @@ type Service = {
   description: string
   imageSrc: string
   anchor: string
+  
 }
 
 const services: Service[] = [
@@ -118,9 +119,42 @@ const Construcciones: React.FC = () => {
 
       <section id="services" className="py-16 bg-gray-100">
         <div className="container mx-auto px-4">
-          <h2 className="section-title text-3xl font-bold text-center mb-10">
-            Nuestros Servicios 
-          </h2>
+          <h2 className="section-title text-4xl md:text-4xl font-extrabold text-center text-blue-950 mb-12">
+        ¿Por qué implementar Gradhoc en su compañía?
+      </h2>
+      <Image
+        src="/images/stats.png"
+        alt="stats"
+        width={500}
+        height={100}
+        className="mx-auto mb-8"
+      />
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-2 gap-5 mb-10">
+        {[
+          {
+            text: 'En términos de eficiencia energética, disminución del consumo de energía y maximización del ahorro energético. El margen de mejora en refrigeración es de entre un 20 y un 40% en consumo de energía.'
+          },
+          {
+            text: 'Reducción de las tareas de mantenimiento, mejorando la optimización del mismo, al implantar un enfoque preventivo y predictivo. El margen de mejora es de un 25% en costes de mantenimiento.'
+          },
+          {
+            text: 'Impacto positivo en la salud de las personas, al garantizar el óptimo estado de conservación de los alimentos, evitando pérdidas de mercancía y reduciendo el desperdicio alimentario.'
+          },
+          {
+            text: 'Cuidado del medio ambiente, minimizando las emisiones de CO2 y reduciendo la huella de carbono gracias al control de refrigeración industrial mediante el software avanzado con inteligencia artificial.'
+          }
+        ].map((item, idx) => (
+          <div
+            key={idx}
+            className="bg-white p-5 md:p-5 rounded-2xl shadow-lg flex items-start flex-col"
+          >
+            <p className="text-base md:text-lg text-blue-950 leading-relaxed">
+              {item.text}
+            </p>
+          </div>
+        ))}
+      </div>
+      
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 text-blue-950">
             {services.map(service => (
