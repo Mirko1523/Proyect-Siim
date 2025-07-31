@@ -19,25 +19,49 @@ type Service = {
 const services: Service[] = [
   {
     id: 1,
-    title: "Tableros Electricos e Instalaciones Electricas",
+    title: "Monitorización y gestión de activos",
     description:
-    "Armado de Tableros  uso general-viviendas- locales comerciales, De uso especiales- industrias, De contingencia y estabilizada, de energías limpias y renovables según lo establecido en la Ley nacional 27424 y la Provincial 12503. Canalizaciones livianas, semipesados, antivandálicas, ignifugas, etc., tendido de circuitos. Armado e instalación de tableros principales y seccionales. Corrección, ampliación y adecuación según normativas vigentes de tableros, sus componentes y aparamenta. Mantenimiento preventivo y correctivo de tableros. Medición y control de protecciones.",
+    "De cada centro, el usuario podrá crear paneles de lectura en tiempo real de todas las variables relacionadas con los activos existentes y de las alarmas correspondientes a ese servicio o activo: Visualización de la sala de máquinas, Cámaras de refrigeración y los servicios a las que estas suministran frio, Salas de ventas con los distintos muebles frigoríficos integración de diferentes protocolos de comunicaciones.",
     imageSrc: "/images/tableroselectricos.jpg",
     anchor: "construcciones",
   },
   {
     id: 2,
-    title: "Relevamiento de medicion de instalaciones",
+    title: "Optimización",
     description:
-      "Relevamiento de Canalizaciones y cableados eléctricos, tableros eléctricos, protecciones y alimentadores, sistemas de iluminación, sistema de puesta a tierra, estado, medición y certificación provinciales y locales , planimetría unifilar y de detalle. Mediciones de Voltaje e intensidad de corriente en tableros seccionales, verificación de alimentador y circuitos, voltaje e intensidad de corriente total en TGBT,factor de potencia a plena carga, secuencias de fases, análisis de redes de baja tensión, termografía de tableros, intensidad de fuga a tierra, aislamiento de circuitos.",
+      "El proceso de optimización permite una gestión de la demanda y de la producción inteligente. Gradhoc es capaz de optimizar instalaciones frigoríficas sin comprometer la seguridad alimentaria. La plataforma despliega alarmas que se activan según fórmulas adaptadas a cada instalación. Fijar temperaturas adaptativas en función de las necesidades, Gestionar encendidos y apagados de los equipos en función de unas determinadas prioridades, Realizar otras actuaciones sobre el funcionamiento de las cámaras frigoríficas.",
     imageSrc: "/images/medicion.jpg",
     anchor: "energia",
   },
   {
     id: 3,
-    title: "Generación Electrica",
+    title: "Mantenimiento",
     description:
-      "Ingeniería y cálculo de solicitud de grupos electrógenos en base a la potencia requerida. Montaje e instalación de grupos electrógenos. Contrato de ABONOS de Mantenimiento Preventivo y Programado. Actualizaciones en Controladores y Tableros de Trasferencia Automática § Reparaciones integrales Motor Y  Generador,Telemetría por medio de GPRS.",
+      "la plataforma detecta patrones y evidencias que indican inicios de malos funcionamientos. Este análisis continuo del comportamiento de la instalación frigorífica garantiza un mantenimiento proactivo y eficiente, actuando antes de que se produzca el fallo.",
+    imageSrc: "/images/generacion.jpg",
+    anchor: "energia",
+  },
+    {
+    id: 4,
+    title: "Gestión de Energía",
+    description:
+    "La plataforma permite la edición y creación de “dashboards” o paneles de visualización adaptados a cada caso particular por medio de los cuales es posible observar la estructura de consumos energéticos en las diferentes zonas y/o equipos de las instalaciones, el consumo por períodos, y otras variables. Se puede gestionar la facturación y compararla con la estructura de consumos establecida, adelantándose a la factura de la compañía eléctrica y obteniendo el coste real en todo momento.",
+    imageSrc: "/images/tableroselectricos.jpg",
+    anchor: "construcciones",
+  },
+  {
+    id: 5,
+    title: "Monitorización de otras energías",
+    description:
+      "La plataforma permite el desarrollo de proyectos a medida y su integración con otras variables energéticas e infraestructuras asociadas, distintas de las variables de refrigeración. Agua de red / ACS / Agua fría, Aire comprimido, Climatización comercial, Consumos Eléctricos, Fotovoltaica Gas, vapor, Sistema contra incendios, Ventilación Señales de proceso.",
+    imageSrc: "/images/medicion.jpg",
+    anchor: "energia",
+  },
+  {
+    id: 6,
+    title: "Edición de Reportes",
+    description:
+      "La plataforma dispone de un componente de visualización de datos y gráficas relacionadas con la monitorización de variables y puede representar otros resultados aplicando modelos estadísticos, con las siguientes funcionalidades: Generación de informes predefinidos y ad hoc,  tanto en tiempo real como con envío automático programable. Personalización de cuadros de mando con indicadores clave de rendimiento (KPIs) que resumen la información y facilitan la toma de decisiones.",
     imageSrc: "/images/generacion.jpg",
     anchor: "energia",
   },
