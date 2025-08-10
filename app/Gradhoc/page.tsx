@@ -22,7 +22,7 @@ const services: Service[] = [
     title: "Monitorización y gestión de activos",
     description:
     "De cada centro, el usuario podrá crear paneles de lectura en tiempo real de todas las variables relacionadas con los activos existentes y de las alarmas correspondientes a ese servicio o activo: Visualización de la sala de máquinas, Cámaras de refrigeración y los servicios a las que estas suministran frio, Salas de ventas con los distintos muebles frigoríficos integración de diferentes protocolos de comunicaciones.",
-    imageSrc: "/images/tableroselectricos.jpg",
+    imageSrc: "/images/monitorizacion-y-control-de-procesos.png",
     anchor: "construcciones",
   },
   {
@@ -30,7 +30,7 @@ const services: Service[] = [
     title: "Optimización",
     description:
       "El proceso de optimización permite una gestión de la demanda y de la producción inteligente. Gradhoc es capaz de optimizar instalaciones frigoríficas sin comprometer la seguridad alimentaria. La plataforma despliega alarmas que se activan según fórmulas adaptadas a cada instalación. Fijar temperaturas adaptativas en función de las necesidades, Gestionar encendidos y apagados de los equipos en función de unas determinadas prioridades, Realizar otras actuaciones sobre el funcionamiento de las cámaras frigoríficas.",
-    imageSrc: "/images/medicion.jpg",
+    imageSrc: "/images/optimizacion-refrigeracion-optimizacion-industrial.png",
     anchor: "energia",
   },
   {
@@ -38,7 +38,7 @@ const services: Service[] = [
     title: "Mantenimiento",
     description:
       "la plataforma detecta patrones y evidencias que indican inicios de malos funcionamientos. Este análisis continuo del comportamiento de la instalación frigorífica garantiza un mantenimiento proactivo y eficiente, actuando antes de que se produzca el fallo.",
-    imageSrc: "/images/generacion.jpg",
+    imageSrc: "/images/mantenimiento-predictivo-mantenimiento-preventivo-refrigeracion.png",
     anchor: "energia",
   },
     {
@@ -46,7 +46,7 @@ const services: Service[] = [
     title: "Gestión de Energía",
     description:
     "La plataforma permite la edición y creación de “dashboards” o paneles de visualización adaptados a cada caso particular por medio de los cuales es posible observar la estructura de consumos energéticos en las diferentes zonas y/o equipos de las instalaciones, el consumo por períodos, y otras variables. Se puede gestionar la facturación y compararla con la estructura de consumos establecida, adelantándose a la factura de la compañía eléctrica y obteniendo el coste real en todo momento.",
-    imageSrc: "/images/tableroselectricos.jpg",
+    imageSrc: "/images/gestion-energetica-refrigeracion.png",
     anchor: "construcciones",
   },
   {
@@ -54,7 +54,7 @@ const services: Service[] = [
     title: "Monitorización de otras energías",
     description:
       "La plataforma permite el desarrollo de proyectos a medida y su integración con otras variables energéticas e infraestructuras asociadas, distintas de las variables de refrigeración. Agua de red / ACS / Agua fría, Aire comprimido, Climatización comercial, Consumos Eléctricos, Fotovoltaica Gas, vapor, Sistema contra incendios, Ventilación Señales de proceso.",
-    imageSrc: "/images/medicion.jpg",
+    imageSrc: "/images/monitorizacion-de-otras-energias-y-procesos.png",
     anchor: "energia",
   },
   {
@@ -62,7 +62,7 @@ const services: Service[] = [
     title: "Edición de Reportes",
     description:
       "La plataforma dispone de un componente de visualización de datos y gráficas relacionadas con la monitorización de variables y puede representar otros resultados aplicando modelos estadísticos, con las siguientes funcionalidades: Generación de informes predefinidos y ad hoc,  tanto en tiempo real como con envío automático programable. Personalización de cuadros de mando con indicadores clave de rendimiento (KPIs) que resumen la información y facilitan la toma de decisiones.",
-    imageSrc: "/images/generacion.jpg",
+    imageSrc: "/images/edicion.png",
     anchor: "energia",
   },
 ]
