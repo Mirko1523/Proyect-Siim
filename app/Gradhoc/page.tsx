@@ -120,7 +120,7 @@ const Construcciones: React.FC = () => {
 
       <motion.div className="absolute inset-0 z-" initial="hidden">
         <Image
-          src="/images/electricista.jpg"
+          src="/images/fondo_azul_gradhoc_c.jpg"
           alt="Background"
           fill
           className="object-cover"
