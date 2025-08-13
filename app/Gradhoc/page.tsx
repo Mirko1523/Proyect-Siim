@@ -179,6 +179,9 @@ const Construcciones: React.FC = () => {
         ))}
       </div>
       
+     <h2 className="section-title text-4xl md:text-4xl font-extrabold text-center text-blue-950 mb-12">
+        Funcionalidades principales del Sistema
+      </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 text-blue-950">
             {services.map(service => (
