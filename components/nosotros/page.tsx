@@ -19,9 +19,8 @@ const AboutUs: React.FC = () => {
   }, [])
 
   const descriptions = [
-    "SIIM, empresa dedicada a brindar soluciones en Ingeniería y Mantenimiento Industrial apuntado a empresas chicas como asi también a empresas de alto volumen. Nos especializamos en una correcta Gestión de Activos desde la concepción de un requerimiento hasta la presentación de la mejor alternativa, con opción llave en mano y gestión de documentación si asi lo requiera.",
-    "Con años de experiencia en empresas corporativas y de diversos tamaños, SIIM ha construido una sólida red de proveedores de alta calidad que nos permite brindar servicios excepcionales y soluciones personalizadas que satisfacen las necesidades específicas de cada cliente en diversas industrias.",
-    "SIIM está comprometido con la preservación del medio ambiente y la sostenibilidad a través del cumplimiento de los más altos estándares de calidad, asegurando que todos nuestros proyectos y servicios contribuyan a un futuro más sustentable manteniendo la excelencia operativa."
+    "KS GROUP es una empresa familiar dedicada a ofrecer productos de alta calidad para la construcción y remodelación de tu hogar.",
+    "Contamos con experiencia y tenemos el compromiso de convertir tus ideas en realidad creando espacios que se adapten a lo que necesites."
   ]
 
   return (
@@ -34,7 +33,7 @@ const AboutUs: React.FC = () => {
 
       {/* Title */}
       <h1
-        className={`mx-auto max-w-3xl text-center text-4xl lg:text-5xl font-extrabold text-blue-950 mb-12 transition-opacity duration-1000 ease-out ${
+        className={`mx-auto max-w-3xl text-center text-4xl lg:text-5xl font-extrabold text-red-800 mb-12 transition-opacity duration-1000 ease-out ${
           isVisible ? 'opacity-100' : 'opacity-0'
         }`}
       >
@@ -53,7 +52,7 @@ const AboutUs: React.FC = () => {
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'
               }`}            
             >
-              <p className={`text-base leading-relaxed text-blue-950 ${idx % 2 === 1 ? 'text-right' : 'text-left'}`}>{text}</p>
+              <p className={`text-base leading-relaxed text-black ${idx % 2 === 1 ? 'text-right' : 'text-left'}`}>{text}</p>
             </div>
           </div>
         ))}
@@ -64,7 +63,7 @@ const AboutUs: React.FC = () => {
         {[
           {
             title: 'Misión',
-            accent: 'bg-blue-950',
+            accent: 'bg-red-800',
             items: [
               'Brindar a nuestros clientes un solido compromiso en satisfacer sus necesidades en tiempo y forma.',
               'Aprovechar nuestro capital humano y conocimientos acumulados para construir relaciones innovadoras basadas en la excelencia, calidad, eficiencia y satisfacción del cliente.'
@@ -72,18 +71,20 @@ const AboutUs: React.FC = () => {
           },
           {
             title: 'Visión',
-            accent: 'bg-blue-950',
+            accent: 'bg-red-800',
             items: [
-              'Ser una referencia líder en servicios de Ingeniería y Mantenimiento, ofreciendo soluciones integrales de excelencia, calidad, eficiencia, agilidad y profesionalismo. Agregamos valor fomentando el desarrollo y mejorando los procesos existentes y futuros para el crecimiento continuo del negocio.'
+              'Ser una referencia líder en construcción y remodelación.',
+              'Ofrecer la mejor calidad en nuestros productos y servicios.',
+              'Fomentar la innovación y la mejora continua en todos los procesos.'
             ]
           },
           {
             title: 'Valores',
-            accent: 'bg-blue-950',
+            accent: 'bg-red-800',
             items: [
               'Compromiso con el espíritu de servicio al cliente.',
               'Excelencia, Calidad, Integridad, Ética e Independencia.',
-              'Respeto por nuestro medio ambiente y sostenibilidad.'
+              'Convertir tus ideas en realidades.'
             ]
           }
         ].map((card, i) => (
@@ -95,9 +96,9 @@ const AboutUs: React.FC = () => {
           >
             <div className="flex items-center justify-center mb-4">
               <div className={`${card.accent} w-2 h-8 rounded-full mr-3`} />
-              <h2 className="text-2xl font-semibold text-blue-950">{card.title}</h2>
+              <h2 className="text-2xl font-semibold text-black">{card.title}</h2>
             </div>
-            <ul className="list-disc list-inside space-y-2 text-blue-950">
+            <ul className="list-disc list-inside space-y-2 text-black">
               {card.items.map((item, j) => (
                 <li key={j} className="hover:text-gray-700 transition-colors duration-200">{item}</li>
               ))}

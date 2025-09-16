@@ -8,8 +8,8 @@ import WhatsAppButton from "@/components/whatsapp-button"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "SIIM - Soluciones Integrales en Ingeniería y Mantenimiento",
-  description: "Empresa ingeniería y mantenimiento en Argentina",
+  title: "KS GROUP",
+  description: "Empresa Familiar dedicada a ofrecer productos de la mejor calidad",
     generator: 'v0.dev'
 }
 

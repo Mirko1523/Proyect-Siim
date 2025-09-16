@@ -3,12 +3,12 @@
 import { useState, useEffect, useRef } from "react"
 import Image from "next/image"
 import { Menu, X, ChevronDown, ChevronUp } from "lucide-react"
-import ServiceDropdown from "./service-dropdown"
+
 
 // Define the navigation links with dropdown support
 const navLinks = [
   { name: "Inicio", href: "#hero", hasDropdown: false },
-  { name: "Servicios", href: "#services", hasDropdown: true },
+  { name: "Catalogo", href: "#services", hasDropdown: false },
   { name: "Contacto", href: "#contact", hasDropdown: false },
 ]
 
@@ -40,7 +40,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-blue-950 shadow-md py-2" : "bg-transparent py-4"
+        isScrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"
       }`}
     >
       <div className="container flex justify-between items-center">
@@ -48,11 +48,10 @@ export default function Navbar() {
           <div className="relative -mb-8 -mt-2 rounded-full overflow-hidden">
              <a href="/">
                     <Image
-              src="/images/logonavbar.png"
+              src="/images/SinFondoKG.png"
               alt="SIIM Logo"
-              // fill
-              width={144}
-              height={144}
+              width={180}
+              height={180}
               className="object-contain"
             />
             </a>
@@ -68,35 +67,26 @@ export default function Navbar() {
                 <>
                   <button
                     className={`flex items-center font-medium transition duration-300 ${
-                      isScrolled ? "text-white hover:text-secondary" : "text-white hover:text-secondary"
+                      isScrolled ? "text-black hover:text-red-500" : "text-white hover:text-red-500"
                     }`}
                     onClick={() => toggleDropdown(link.name)}
                     aria-expanded={activeDropdown === link.name}
                     aria-haspopup="true"
                   >
-                    {link.name}
+                    {/* {link.name}
                     {activeDropdown === link.name ? (
                       <ChevronUp className="ml-1 h-4 w-4" />
                     ) : (
                       <ChevronDown className="ml-1 h-4 w-4" />
-                    )}
+                    )} */}
                   </button>
-                  {/* Desktop Dropdown */}
-                  <div
-                    className={`absolute left-0 mt-2 w-64 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 transition-all duration-200 ${
-                      activeDropdown === link.name
-                        ? "opacity-100 translate-y-0 visible"
-                        : "opacity-0 -translate-y-2 invisible"
-                    }`}
-                  >
-                    <ServiceDropdown isScrolled={isScrolled} closeDropdown={() => setActiveDropdown(null)} />
-                  </div>
+           
                 </>
               ) : (
                 <a
                   href={link.href}
                   className={`font-medium transition duration-300 ${
-                    isScrolled ? "text-white hover:text-secondary" : "text-white hover:text-secondary"
+                    isScrolled ? "text-black hover:text-red-500" : "text-white hover:text-red-500"
                   }`}
                 >
                   {link.name}
@@ -108,7 +98,7 @@ export default function Navbar() {
 
         {/* Mobile Navigation Toggle */}
         <button
-          className={`md:hidden ${isScrolled ? "text-white" : "text-white"}`}
+          className={`md:hidden ${isScrolled ? "text-black" : "text-black"}`}
           onClick={() => setIsOpen(!isOpen)}
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
@@ -125,7 +115,7 @@ export default function Navbar() {
                 {link.hasDropdown ? (
                   <div>
                     <button
-                      className="flex items-center justify-between w-full text-primary hover:text-secondary font-medium transition duration-300"
+                      className="flex items-center justify-between w-full text-black hover:text-red-500 font-medium transition duration-300"
                       onClick={() => toggleDropdown(link.name)}
                       aria-expanded={activeDropdown === link.name}
                     >
@@ -141,21 +131,13 @@ export default function Navbar() {
                      <div className="mt-2 ml-4 space-y-2"
                      onClick={() => console.log("Clic en el contenedor padre 2")}
                      >
-                      
-                     <ServiceDropdown
-                       isMobile={true}
-                       closeDropdown={() => {
-                         setActiveDropdown(null); // Cierra el desplegable
-                         setIsOpen(false);       // Cierra el menú móvil
-                       }}
-                     />
                    </div>
                     )}
                   </div>
                 ) : (
                   <a
                     href={link.href}
-                    className="text-primary hover:text-secondary font-medium transition duration-300"
+                    className="text-black hover:text-secondary font-medium transition duration-300"
                     onClick={() => setIsOpen(false)}
                   >
                     {link.name}

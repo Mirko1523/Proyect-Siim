@@ -6,8 +6,8 @@ export default function Loading() {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
       <Image
-        src="/images/logoSiim-Photoroom.png"
-        alt="SIIM Logo"
+        src="/images/LogoKS.jpg"
+        alt="ks Logo"
         width={250}
         height={250}
         className="animate-pulse"

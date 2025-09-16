@@ -20,15 +20,15 @@ export default function Contact() {
   return (
     <section id="contact" className="py-16">
       <div className="container">
-        <h2 className="section-title">Contáctenos</h2>
-        <p className="section-description">
-          Estamos listos para ayudarle con sus proyectos. Complete el formulario y nos
+        <h2 className="section-title text-black">Contáctenos</h2>
+        <p className="section-description text-black">
+          Estamos listos para ayudarle con sus construcciones. Complete el formulario y nos
           pondremos en contacto a la brevedad.
         </p>
 
         <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-8">
           <form
-            action="https://formsubmit.co/siim.asesoramientosyventas@gmail.com"
+            action="https://formsubmit.co/agenciamkm9@gmail.com"
             method="POST"
             className="space-y-6"
           >
@@ -45,7 +45,7 @@ export default function Contact() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="firstName" className="block text-gray-700 font-medium mb-2">
+                <label htmlFor="firstName" className="block text-black font-medium mb-2">
                   Nombre
                 </label>
                 <input
@@ -55,11 +55,11 @@ export default function Contact() {
                   value={formData.firstName}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
                 />
               </div>
               <div>
-                <label htmlFor="lastName" className="block text-gray-700 font-medium mb-2">
+                <label htmlFor="lastName" className="block text-black font-medium mb-2">
                   Apellido
                 </label>
                 <input
@@ -69,14 +69,14 @@ export default function Contact() {
                   value={formData.lastName}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
                 />
               </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="email" className="block text-gray-700 font-medium mb-2">
+                <label htmlFor="email" className="block text-black font-medium mb-2">
                   Email
                 </label>
                 <input
@@ -86,11 +86,11 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
                 />
               </div>
               <div>
-                <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">
+                <label htmlFor="phone" className="block text-black font-medium mb-2">
                   Teléfono
                 </label>
                 <input
@@ -100,13 +100,13 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-gray-700 font-medium mb-2">
+              <label htmlFor="message" className="block text-black font-medium mb-2">
                 Mensaje
               </label>
               <textarea
@@ -116,12 +116,12 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 rows={5}
-                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-primary"
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-red-500"
               />
             </div>
 
             <div className="text-center">
-              <button type="submit" className="btn-primary">
+              <button type="submit" className="bg-red-500 btn-primary inline-block hover:scale-105 hover:bg-red-600 transition-transform rounded-xl">
                 Enviar Mensaje
               </button>
             </div>

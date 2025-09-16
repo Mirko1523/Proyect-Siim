@@ -4,7 +4,6 @@ import Hero from "@/components/hero"
 import Services from "@/components/services"
 import Contact from "@/components/contact"
 import Footer from "@/components/footer"
-import LogoCarousel from "@/components/carrousel"
 import AboutUs from "../components/nosotros/page"
 
 export default async function Home() {
@@ -17,10 +16,6 @@ export default async function Home() {
       <Hero />
       <AboutUs />
       <Services />
-      <div className="font-bold text-blue-950 flex flex-col items-center justify-center bg-gray-50 ">
-        <h1>Nuestros clientes:</h1>
-      </div>
-      <LogoCarousel />
       <Contact />
       <Footer />
     </main>

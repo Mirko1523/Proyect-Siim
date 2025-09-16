@@ -53,7 +53,7 @@ export default function Hero() {
         variants={backgroundVariants}
       >
         <Image
-          src="/images/home.tsx.jpg"
+          src="/images/FondoKG.png"
           alt="Background"
           fill
           className="object-cover"
@@ -78,12 +78,12 @@ export default function Hero() {
               className="text-3xl sm:text-5xl md:text-5xl font-bold text-white mt-9 md:mb-9 leading-tight"
               variants={itemVariants}
             >
-              Soluciones Integrales en Ingeniería y Mantenimiento
+              Construí con la confianza que mereces.
             </motion.h1>
             <motion.div variants={itemVariants} className="mt-8">
               <a
                 href="#contact"
-                 className=" bg-secundary btn-primary inline-block hover:scale-105 transition-transform rounded-xl"
+                 className=" bg-red-500 btn-primary inline-block hover:scale-105 hover:bg-red-600 transition-transform rounded-xl"
               >
                 Contáctenos
               </a>
